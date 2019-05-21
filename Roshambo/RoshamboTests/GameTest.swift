@@ -55,4 +55,13 @@ class GameTests: XCTestCase {
         XCTAssertEqual(game.status, Game.Status.None)
     }
     
+    // 게임이 승자가 있으면 종료돼면 isOver == true
+    func testGameIsOver() {
+        let _ = game.nextRound(player1: .Paper, player2: .Rock)
+        let _ = game.nextRound(player1: .Paper, player2: .Paper)
+        
+        XCTAssertTrue(game.isOver)
+    }
+    
+    
 }
