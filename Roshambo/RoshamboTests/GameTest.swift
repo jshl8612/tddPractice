@@ -44,7 +44,7 @@ class GameTests: XCTestCase {
     }
     
     // 게임에서 한round의 결과가 맞는 상태로 변경하는것을 테스트
-    func testPlayOneRoundStatus() {
+    func tesGameStatus() {
         
         let _ = game.nextRound(player1: .Paper, player2: .Rock)
         
@@ -54,4 +54,5 @@ class GameTests: XCTestCase {
         
         XCTAssertEqual(game.status, Game.Status.Player1Win)
     }
+    
 }
