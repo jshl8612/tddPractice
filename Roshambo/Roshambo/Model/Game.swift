@@ -12,12 +12,20 @@ class Game: NSObject {
     
     enum Status {
         case Player1Win, Player2Win, Player1Advanced, Player2Advanced, None
+        
+        var isOver: Bool {
+            return self == .Player1Win || self == .Player2Win
+        }
     }
     
     private var _status: Status = .None
     
     var status: Status {
         return _status
+    }
+    
+    var isOver: Bool {
+        return _status.isOver
     }
     
     func nextRound(player1: Roshambo, player2: Roshambo) -> Roshambo.Result {
