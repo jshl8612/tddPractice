@@ -31,5 +31,12 @@ class RoshamboTests: XCTestCase {
         }
     }
 
-    
+    /// 가위 > 보, 보 > 바위, 바위 > 가위
+    func testAllWinCases() {
+        
+        XCTAssertTrue(Roshambo.Rock > Roshambo.Scissors)
+        XCTAssertTrue(Roshambo.Scissors > Roshambo.Paper)
+        XCTAssertTrue(Roshambo.Paper > Roshambo.Rock)
+        
+    }
 }
