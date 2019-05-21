@@ -10,6 +10,10 @@ import Foundation
 
 enum Roshambo: Comparable{
     
+    enum Result {
+        case Win, Equal, Lost
+    }
+    
     case Rock, Paper, Scissors
     
     static func < (lhs: Roshambo, rhs: Roshambo) -> Bool {
@@ -29,4 +33,15 @@ enum Roshambo: Comparable{
             return false
         }
     }
+    
+    func compares(r: Roshambo) -> Result {
+        if self > r {
+            return .Win
+        } else if self == r {
+            return .Equal
+        } else {
+            return .Lost
+        }
+    }
+    
 }

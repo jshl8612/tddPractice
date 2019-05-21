@@ -10,4 +10,8 @@ import Foundation
 
 class Game: NSObject {
     
+    func nextRound(player1: Roshambo, player2: Roshambo) -> Roshambo.Result {
+        return player1.compares(r: player2)
+    }
+    
 }

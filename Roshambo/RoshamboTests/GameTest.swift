@@ -38,9 +38,9 @@ class GameTests: XCTestCase {
         let player1 = Roshambo.Paper
         let player2 = Roshambo.Rock
         
-        let result = game.nextRound(player1, player2)
+        let result = game.nextRound(player1: player1, player2: player2)
         
-        XCTAssertEqual(result, Roshambo.Results.Win)
+        XCTAssertEqual(result, Roshambo.Result.Win)
     }
     
 }
