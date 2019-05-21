@@ -38,5 +38,8 @@ class RoshamboTests: XCTestCase {
         XCTAssertTrue(Roshambo.Scissors > Roshambo.Paper)
         XCTAssertTrue(Roshambo.Paper > Roshambo.Rock)
         
+        XCTAssertFalse(Roshambo.Rock < Roshambo.Scissors)
+        XCTAssertFalse(Roshambo.Scissors < Roshambo.Paper)
+        XCTAssertFalse(Roshambo.Paper < Roshambo.Rock)
     }
 }

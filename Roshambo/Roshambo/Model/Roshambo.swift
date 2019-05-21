@@ -13,10 +13,20 @@ enum Roshambo: Comparable{
     case Rock, Paper, Scissors
     
     static func < (lhs: Roshambo, rhs: Roshambo) -> Bool {
-        return false
+        switch (lhs, rhs) {
+        case (.Rock, .Paper), (.Paper, .Scissors), (.Scissors, .Rock):
+            return true
+        default:
+            return false
+        }
     }
     
     static func > (lhs: Roshambo, rhs: Roshambo) -> Bool {
-        return true
+        switch (lhs, rhs) {
+        case (.Paper, .Rock), (.Scissors, .Paper), (.Rock, .Scissors):
+            return true
+        default:
+            return false
+        }
     }
 }
