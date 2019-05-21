@@ -29,17 +29,16 @@ class Game: NSObject {
     
     func updateStatus(by result: Roshambo.Result) {
         switch (_status, result) {
-        case (_, .Equal):
-            break
-        case (.Player1Advanced, .Win):
+        case (.Player1Advanced, .Equal):
             _status = .Player1Win
         case (.None, .Win):
             _status = .Player1Advanced
-        case (.Player1Advanced, .Lost), (.Player2Advanced, .Win):
+        case (.Player1Advanced, .Lost), (.Player1Advanced, .Win),
+             (.Player2Advanced, .Win), (.Player2Advanced, .Lost):
             _status = .None
         case (.None, .Lost):
             _status = .Player2Advanced
-        case (.Player2Advanced, .Lost):
+        case (.Player2Advanced, .Equal):
             _status = .Player2Win
         default:
             break
