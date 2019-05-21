@@ -33,4 +33,14 @@ class GameTests: XCTestCase {
         }
     }
     
+    // 게임에서 한round의 결과가 맞는 결과가 생기는것을 테스트
+    func testPlayOneRound() {
+        let player1 = Roshambo.Paper
+        let player2 = Roshambo.Rock
+        
+        let result = game.nextRound(player1, player2)
+        
+        XCTAssertEqual(result, Roshambo.Results.Win)
+    }
+    
 }
