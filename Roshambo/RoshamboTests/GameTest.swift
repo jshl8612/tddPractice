@@ -49,5 +49,9 @@ class GameTests: XCTestCase {
         let _ = game.nextRound(player1: .Paper, player2: .Rock)
         
         XCTAssertEqual(game.status, Game.Status.Player1Advanced)
+        
+        let _ = game.nextRound(player1: .Paper, player2: .Rock)
+        
+        XCTAssertEqual(game.status, Game.Status.Player1Win)
     }
 }
