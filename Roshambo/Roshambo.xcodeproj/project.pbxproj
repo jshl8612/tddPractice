@@ -16,6 +16,8 @@
 		22329C37229432530034FD80 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22329C36229432530034FD80 /* Game.swift */; };
 		22329C38229432630034FD80 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22329C36229432530034FD80 /* Game.swift */; };
 		22329C3A2294341D0034FD80 /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22329C392294341D0034FD80 /* GameTest.swift */; };
+		22329C3C2294358E0034FD80 /* Roshambo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22329C3B2294358E0034FD80 /* Roshambo.swift */; };
+		22329C3D229435B40034FD80 /* Roshambo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22329C3B2294358E0034FD80 /* Roshambo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 		22329C2C229431150034FD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22329C36229432530034FD80 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		22329C392294341D0034FD80 /* GameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTest.swift; sourceTree = "<group>"; };
+		22329C3B2294358E0034FD80 /* Roshambo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roshambo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				22329C36229432530034FD80 /* Game.swift */,
+				22329C3B2294358E0034FD80 /* Roshambo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22329C3C2294358E0034FD80 /* Roshambo.swift in Sources */,
 				22329C18229431140034FD80 /* ViewController.swift in Sources */,
 				22329C37229432530034FD80 /* Game.swift in Sources */,
 				22329C16229431140034FD80 /* AppDelegate.swift in Sources */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22329C3D229435B40034FD80 /* Roshambo.swift in Sources */,
 				22329C2B229431150034FD80 /* RoshamboTests.swift in Sources */,
 				22329C38229432630034FD80 /* Game.swift in Sources */,
 				22329C3A2294341D0034FD80 /* GameTest.swift in Sources */,
